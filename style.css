@@ -248,3 +248,93 @@ body {
     text-align: right;
     color: #382314;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 500px) {
+    body {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    /* HEADER */
+    .hd {
+        margin-bottom: 24px;
+        border-radius: 20px;
+        padding: 27px 39px 25px 32px;
+    }
+
+    .hd__text {
+        margin-bottom: 8px;
+    }
+
+    .hd__balance {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .hd__logo {
+        width: 60px;
+        height: 40px;
+    }
+
+    /* CARD */
+
+    .card {
+        border-radius: 20px;
+        padding: 32px 40px 40px 40px;
+    }
+
+    .card__h1 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 66px;
+    }
+
+    /* GRAPH */
+
+    .card__graph {
+        column-gap: 18px;
+        grid-template-columns: repeat(7, minmax(0, 50px));
+        grid-template-rows: 178px;
+    }
+
+    .card__graph__col {
+        border-radius: 5px;
+    }
+
+    .card__graph__p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+
+    /* SUM */
+
+    .card__sum {
+        margin-top: 66px;
+    }
+
+    .card__sum::before {
+        top: -34px;
+    }
+
+    .card__sum__col-left .card__sum__text {
+        margin-bottom: 1px;
+    }
+
+    .card__sum__col-right .card__sum__text {
+        margin-top: 1px;
+    }
+
+    .card__sum__col-right {
+        margin-bottom: 10px;
+    }
+
+    .card__sum__money {
+        font-size: 48px;
+        line-height: 62px;
+    }
+}
+
+/*  */
