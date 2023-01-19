@@ -1,14 +1,26 @@
+import "./newData.js";
+
 const card = document.querySelector(".card");
 const graph = document.querySelector(".card__graph");
 const logo = document.querySelector(".hd__logo");
 let heights;
 
-const renderData = async function () {
-    const res = await fetch("./data.json");
-    const data = await res.json();
+export const renderData = async function (localData) {
+    let data;
+    let days;
+    let amounts;
 
-    const days = data.map(d => d.day);
-    const amounts = data.map(d => d.amount);
+    if (!localData) {
+        const res = await fetch("./data.json");
+        data = await res.json();
+
+        days = data.map(d => d.day);
+        amounts = data.map(d => d.amount);
+    } else {
+        days = [1, 2, 3, 4, 5, 6, 7];
+        data = localData;
+        amounts = localData;
+    }
 
     const maxValue = amounts.reduce((ac, num) => (ac < num ? num : ac), 0);
     const maxHeight = 150;
@@ -32,6 +44,13 @@ const renderData = async function () {
 
     graph.innerHTML = "";
     graph.insertAdjacentHTML("afterbegin", markup);
+
+    setTimeout(() => {
+        if (localData) {
+            cols = document.querySelectorAll(".card__graph__col");
+            cols.forEach((c, i) => (c.style.height = `${heights[i]}px`));
+        }
+    }, 100);
 };
 
 renderData();

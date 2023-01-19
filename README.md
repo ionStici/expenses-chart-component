@@ -2,17 +2,17 @@
 
 This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt).
 
-## Links
+<center>
 
-| [Solution URL](https://github.com/ionStici/expenses-chart-component-fem) | [Live Site URL](https://ionstici.github.io/expenses-chart-component-fem) |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| **Links** | [Solution URL](https://github.com/ionStici/expenses-chart-component-fem) | [Live Site URL](https://ionstici.github.io/expenses-chart-component-fem) |
+| --------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 
-## Author
+| **Author** | [GitHub](https://github.com/ionStici) | [Frontend Mentor](https://www.frontendmentor.io/profile/ionStici) | [Twitter](https://twitter.com/ionStici_) |
+| ---------- | ------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------- |
 
-| [GitHub](https://github.com/ionStici) | [Frontend Mentor](https://www.frontendmentor.io/profile/ionStici) | [Twitter](https://twitter.com/ionStici_) |
-| ------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------- |
+</center>
 
-## Screenshot
+<br>
 
 ![](./images/screenshot.png)
 
